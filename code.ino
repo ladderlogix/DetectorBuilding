@@ -42,13 +42,8 @@ void loop()
   
   for (int i = 0, f = 0; i < 6; i += 2, f++) {
     if (MainTriggerList[i] <= weight && weight <= MainTriggerList[i + 1]) 
-    {
-        digitalWrite(PinList[f], HIGH);
-    }
-    else
-    {
-        digitalWrite(PinList[f], LOW);
-    }
+    {digitalWrite(PinList[f], HIGH);}
+    else {digitalWrite(PinList[f], LOW);}
   }
   delay(500);
 }
